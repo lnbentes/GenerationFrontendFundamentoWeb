@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
 
-    <ul>
+    <!-- Um lista com links para o menu -->
+    <ul class="menu">
         <li>
-            <a href="index.html">Home</a>
+            <a href="index.html"><img src="./assets/icons/Home/2x/outline_home_black_24dp.png" alt="botaoHome"></a>
         </li>
         <li>
-            <a href="contato.html">Contato</a>
+            <a href="contato.html"><img src="./assets/icons/Contatos/2x/outline_account_circle_black_24dp.png" alt="botaoContatos"></a>
+        </li>
+        <li>
+            <a href="galeria.html"><img src="./assets/icons/gallery/2x/outline_collections_black_24dp.png" alt="botaoGaleria"></a>
         </li>
     </ul>
 
-    <h1>Entre em contato comigo</h1>
+    <h1 class="centro">Entre em contato comigo</h1>
 
     <!-- Criando um formulario com a tag form -->
-    <form>
+    <form class="formularioContato">
         <label for="nome">Nome:</label>
         <input type="text" id="nome">
 
@@ -33,26 +40,36 @@
         <button>Enviar</button>
     </form>
 
+    <hr>
 
-    <h2>Minhas Redes Sociais</h2>
+    <h2 class="centro">Minhas Redes Sociais</h2>
 
-    <p>
-        GitHub - <a href="https://github.com/lnbentes" target="_blank">lnbentes</a>
-    </p>
-    <p>
-        <!-- o target com o blank faz com que o link seja aberto em outra aba do navegador -->
-        Linkdin - <a href="https://www.linkedin.com/in/lnbentes/" target="_blank">lnbentes</a>
-    </p>
+    <div class="social">
+        <p>
+            <!-- o target com o blank faz com que o link seja aberto em outra aba do navegador -->
+           GitHub - <img src="./assets/icons/redeSocial/github.png" alt="botaoGithub"> <a href="https://github.com/lnbentes" target="_blank">lnbentes</a>
+       </p>
+       <p>
+           Linkdin - <img src="./assets/icons/redeSocial/linkdin.png" alt="botaoLinkdin"> <a href="https://www.linkedin.com/in/lnbentes/" target="_blank">lnbentes</a>
+       </p>
+       <p>
+           E-mail - <img src="./assets/icons/redeSocial/email.png" alt="botaoEmail"> <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvmZqVmLlCBncCTjcsJtZXKmjnXFsdqQZTZQRKwFBBcZsfSJcWrjmQXFvpLTPdwSdqDdvq" target="_blank">lnbentes@gmail.com</a>
+       </p>
+    </div>
 
-    <h2>Endereço</h2>
+    <hr>
+
+    <h2 class="centro">Endereço</h2>
     
-    <p>61 Bertram Court, The Liberties, Dublin, Ireland</p>
+    <div class="map">
+        <p>61 Bertram Court, The Liberties, Dublin, Ireland</p>
 
-    <!-- Introduzindo um mapas do google maps -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1191.0075834055008!2d-6.276134368017654!3d53.34298469698048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670d041b2298a5%3A0xd1b5402ecf2551bd!2s61%20Bertram%20Court!5e0!3m2!1sen!2sbr!4v1650303557487!5m2!1sen!2sbr" 
-    width="400" height="250" style="border:0;" 
-    allowfullscreen="" loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Introduzindo um mapas do google maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1191.0075834055008!2d-6.276134368017654!3d53.34298469698048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670d041b2298a5%3A0xd1b5402ecf2551bd!2s61%20Bertram%20Court!5e0!3m2!1sen!2sbr!4v1650303557487!5m2!1sen!2sbr" 
+        width="400" height="250" style="border:0;" 
+        allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
 
 </body>
