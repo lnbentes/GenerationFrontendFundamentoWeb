@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@300;400;500&display=swap');
+
+/*#### Global ####*/
+
+:root{
+    --deep-blue: #0D0630;
+    --dark-blue: #18314F;
+    --gray-blue: #384E77;
+    --green: #8BBEB2;
+    --ligth-green: #E6F9AF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: nome;
+    font-family: 'PT Serif', serif;
+}
+
+body{
+    background-color: var(--gray-blue);
+    color: var(--deep-blue);
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--green);
+}
+.menu li{
+    justify-content: flex-start;
+}
+
+.menu li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu li a img{
+    filter: invert(100%)
+}
+
+/*O hover informa o que deve fazer qunaod o mouse estiver em cima*/
+.menu li a img:hover{
+    filter: invert(25%)
+}
+
+.centro{
+    text-align: center;
+}
+
+.P20{
+    padding: 20px;
+}
+
+h1{
+    color: var(--deep-blue);
+}
+
+/*#### Estilos da pagina index.html ####*/
+.contenerMenu{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    min-height: 82vh;
+}
+
+.imgMenu img{
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.textMenu{
+    font-size: 1.25rem;
+}
+
+
+/*Estilos da pagina contato.html*/
+input, textarea{
+    padding: 0.5rem;
+    width: 100%;
+    font-weight: 600;
+    border: 0;
+    border-bottom: 2px solid var(--deep-blue);
+    background-color: var(--dark-blue);
+    margin-bottom: 1rem;
+    resize: none;
+}
+
+.formularioContato button{
+    text-align: center;
+    justify-content: center;
+}
+
+.social{
+    text-align: center;
+}
+
+.social p img{
+    max-width: 20px;
+}
+
+.social p a{
+    list-style: none;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: var(--deep-blue);
+}
+
+.map{
+    text-align: center;
+    justify-content: center;
+}
+
+/*Estilos da pagina galeria.html*/
+
+.fotos{
+    text-align: center;
+    justify-content: center;
+}
+
+.videos{
+    text-align: center;
+    justify-content: center;
+}
