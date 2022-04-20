@@ -31,15 +31,18 @@
     <div class="formularioContato">
         <form>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome">
+            <input type="text" id="nome" onkeyup="validarNome()">
+            <div class="textNome"></div>
     
             <label for="email">E-mail:</label>
-            <input type="email" id="email">
+            <input type="email" id="email" onkeyup="validarEmail()">
+            <div class="textEmail"></div>
     
             <label for="assunto">Assunto:</label>
-            <textarea name="assunto" id="assunti" cols="30" rows="5"></textarea>
+            <textarea name="assunto" id="assunto" cols="30" rows="5" onkeyup="validarAssunto()"></textarea>
+            <div class="textAssunto"></div>
     
-            <button>Enviar</button>
+            <button onclick="enviar()">Enviar</button>
         </form>
 
         <div class="map">
@@ -49,7 +52,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1191.0075834055008!2d-6.276134368017654!3d53.34298469698048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670d041b2298a5%3A0xd1b5402ecf2551bd!2s61%20Bertram%20Court!5e0!3m2!1sen!2sbr!4v1650303557487!5m2!1sen!2sbr" 
             width="400" height="250" style="border:0;" 
             allowfullscreen="" loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerpolicy="no-referrer-when-downgrade" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
         </div>
     </div>
 
@@ -79,6 +82,9 @@
             Todos os direitos reservados: Lucas Bentes &copy
         </p>
     </footer>
+
+
+    <script src="./assets/script/script.js"></script>
 
 </body>
 </html>
