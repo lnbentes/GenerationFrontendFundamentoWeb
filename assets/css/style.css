@@ -15,7 +15,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: nome;
+    list-style: none;
     font-family: 'PT Serif', serif;
 }
 
@@ -91,12 +91,25 @@ input, textarea{
     resize: none;
 }
 
+.formularioContato{
+    display: flex;
+    justify-content: center;
+}
+
 .formularioContato button{
+    color: var(--deep-blue);
+    background-color: var(--green);
     text-align: center;
     justify-content: center;
 }
 
+.map{
+    padding: 30px;
+}
+
 .social{
+    justify-content: center;
+    display: flex;
     text-align: center;
 }
 
@@ -105,15 +118,15 @@ input, textarea{
 }
 
 .social p a{
+    padding: 5px;
     list-style: none;
     flex-wrap: wrap;
     text-decoration: none;
     color: var(--deep-blue);
 }
 
-.map{
-    text-align: center;
-    justify-content: center;
+.rodaPe{
+    min-height: 27vh;
 }
 
 /*Estilos da pagina galeria.html*/

@@ -27,20 +27,31 @@
     <h1 class="centro">Entre em contato comigo</h1>
 
     <!-- Criando um formulario com a tag form -->
-    <form class="formularioContato">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome">
+    
+    <div class="formularioContato">
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome">
+    
+            <label for="email">E-mail:</label>
+            <input type="email" id="email">
+    
+            <label for="assunto">Assunto:</label>
+            <textarea name="assunto" id="assunti" cols="30" rows="5"></textarea>
+    
+            <button>Enviar</button>
+        </form>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email">
-
-        <label for="assunto">Assunto:</label>
-        <textarea name="assunto" id="assunti" cols="30" rows="5"></textarea>
-
-        <button>Enviar</button>
-    </form>
-
-    <hr>
+        <div class="map">
+            <p>61 Bertram Court, The Liberties, Dublin, Ireland</p>
+    
+            <!-- Introduzindo um mapas do google maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1191.0075834055008!2d-6.276134368017654!3d53.34298469698048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670d041b2298a5%3A0xd1b5402ecf2551bd!2s61%20Bertram%20Court!5e0!3m2!1sen!2sbr!4v1650303557487!5m2!1sen!2sbr" 
+            width="400" height="250" style="border:0;" 
+            allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
 
     <h2 class="centro">Minhas Redes Sociais</h2>
 
@@ -49,28 +60,25 @@
             <!-- o target com o blank faz com que o link seja aberto em outra aba do navegador -->
            GitHub - <img src="./assets/icons/redeSocial/github.png" alt="botaoGithub"> <a href="https://github.com/lnbentes" target="_blank">lnbentes</a>
        </p>
+       <hr>
        <p>
            Linkdin - <img src="./assets/icons/redeSocial/linkdin.png" alt="botaoLinkdin"> <a href="https://www.linkedin.com/in/lnbentes/" target="_blank">lnbentes</a>
        </p>
+       <hr>
        <p>
            E-mail - <img src="./assets/icons/redeSocial/email.png" alt="botaoEmail"> <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvmZqVmLlCBncCTjcsJtZXKmjnXFsdqQZTZQRKwFBBcZsfSJcWrjmQXFvpLTPdwSdqDdvq" target="_blank">lnbentes@gmail.com</a>
        </p>
     </div>
 
+    <div class="rodaPe"></div>
+
+
     <hr>
-
-    <h2 class="centro">Endereço</h2>
-    
-    <div class="map">
-        <p>61 Bertram Court, The Liberties, Dublin, Ireland</p>
-
-        <!-- Introduzindo um mapas do google maps -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1191.0075834055008!2d-6.276134368017654!3d53.34298469698048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670d041b2298a5%3A0xd1b5402ecf2551bd!2s61%20Bertram%20Court!5e0!3m2!1sen!2sbr!4v1650303557487!5m2!1sen!2sbr" 
-        width="400" height="250" style="border:0;" 
-        allowfullscreen="" loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
+    <footer>
+        <p class="centro">
+            Todos os direitos reservados: Lucas Bentes &copy
+        </p>
+    </footer>
 
 </body>
 </html>
